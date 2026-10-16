@@ -272,7 +272,7 @@ wheels = [
 
 [[package]]
 name = "pulumi-azure-native-stubs"
-version = "3.16.0.20260408"
+version = "3.16.0.20261016"
 source = { editable = "." }
 dependencies = [
     { name = "pulumi-azure-native" },
